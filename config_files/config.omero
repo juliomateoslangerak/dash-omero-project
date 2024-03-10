@@ -2,7 +2,7 @@
 config append omero.web.apps '"omero_metrics"'
 
 # Add a link to the app from webclient toolbar
-config append omero.web.ui.top_links '["DashApp", "omerodash_index", {"title": "Open app in new tab", "target": "_blank"}]'
+config append omero.web.ui.top_links '["Metrics", "omero_metrics", {"title": "Open app in new tab", "target": "_blank"}]'
 
 # Uncomment this out to enable, if app has been installed
 # config append omero.web.apps '"react_webapp"'

@@ -19,7 +19,7 @@ services:
     # To upgrade to the next major release, increment the major version number
     depends_on:
       - database
-    build: omero-server
+    build: test/omero-server
     platform: linux/amd64
     environment:
       CONFIG_omero_db_host: database
@@ -40,7 +40,7 @@ services:
   omeroweb:
     depends_on:
       - omeroserver
-    build: omero-web
+    build: .
     platform: linux/amd64
     environment:
       OMEROHOST: omeroserver

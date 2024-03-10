@@ -1,31 +1,31 @@
-OMERO.omerodash
+OMERO.omero_metrics
 =======================
 
-OMERO example minimal web app.
+An dashboard to visualize microscope-metrics data in OMERO.
 
 Installation
 ============
 
-Install `omerodash` in development mode as follows:
+Install `omero_metrics` in development mode as follows:
 
     # within your python venv:
-    $ cd omero-dash-webapp
+    $ cd omero-metrics
     $ pip install -e .
 
 Add the app to the `omero.web.apps` setting:
 
 N.B. Here we use single quotes around double quotes:
 
-    $ omero config append omero.web.apps '"omerodash"'
+    $ omero config append omero.web.apps '"omero_metrics"'
 
-Optionally, add a link "Omero Dashboards" at the top of the webclient to
+Optionally, add a link "OMERO metrics" at the top of the webclient to
 open the index page of this app:
 
-    $ omero config append omero.web.ui.top_links '["Omero Dashboards", "omerodash_index", {"title": "Open Omero Dashboards in new tab", "target": "_blank"}]'
+    $ omero config append omero.web.ui.top_links '["OMERO metrics", "omero_metrics_index", {"title": "Open OMERO metrics in new tab", "target": "_blank"}]'
 
 
 Now restart your `omero-web` server and go to
-<http://localhost:4080/omerodash/> in your browser.
+<http://localhost:4080/omero_metrics/> in your browser.
 
 
 Further Info

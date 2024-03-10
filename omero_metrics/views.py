@@ -39,4 +39,4 @@ def index(request, conn=None, **kwargs):
     # print('context', context)
 
     # Render the html template and return the http response
-    return render(request, "omerodash/index.html", context)
+    return render(request, "omero_metrics/index.html", context)

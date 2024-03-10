@@ -21,5 +21,5 @@ from . import views
 
 urlpatterns = [
     # index 'home page' of the app
-    re_path(r"^$", views.index, name="omerodash_index"),
+    re_path(r"^$", views.index, name="omero_metrics_index"),
 ]
